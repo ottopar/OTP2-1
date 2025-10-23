@@ -2,7 +2,7 @@ pipeline{
     agent any
     environment {
         DOCKERHUB_CREDENTIALS_ID = 'Docker_Hub'
-        DOCKERHUB_REPO = 'ottopar/OTP2-1'
+        DOCKERHUB_REPO = 'ottopar/otp2-1'
         DOCKER_IMAGE_TAG = 'latest'
     }
 
