@@ -8,4 +8,4 @@ COPY src /app/src/
 
 RUN mvn package
 
-CMD ["java", "-cp", "target/OTP2-1-1.0-SNAPSHOT.jar", "ShoppingCartTest"]
+CMD ["java", "-cp", "target/OTP2-1-1.0-SNAPSHOT.jar", "ShoppingCart"]
