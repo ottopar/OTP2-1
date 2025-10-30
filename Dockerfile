@@ -14,6 +14,12 @@ RUN mkdir -p /javafx-sdk \
     && mv /javafx-sdk/javafx-sdk-20.0.1/lib /javafx-sdk/lib \
     && rm -rf /javafx-sdk/javafx-sdk-20.0.1 javafx.zip
 
+# Install fonts for japanese
+RUN apt-get update && \
+    apt-get install -y fonts-noto-cjk && \
+    apt-get clean && \
+    rm -rf /var/lib/apt/lists/*
+
 # Copy source and build
 COPY pom.xml /app
 COPY src /app/src/
