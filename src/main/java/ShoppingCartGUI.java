@@ -49,7 +49,7 @@ public class ShoppingCartGUI extends Application {
         layout.getChildren().addAll(title, btnEnglish, btnFinnish, btnSwedish, btnJapanese);
 
         Scene scene = new Scene(layout, 400, 300);
-        stage.setTitle("Shopping Cart");
+        stage.setTitle("Shopping Cart / Otto Pärnänen");
         stage.setScene(scene);
         stage.show();
     }
