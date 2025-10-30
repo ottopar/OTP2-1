@@ -20,6 +20,7 @@ class ShoppingCartTest {
         assert(rb.getString("cart.total").equals("Total cost of shopping cart: {0}"));
         assert(rb.getString("invalid.number").equals("Invalid number, try again."));
         assert(rb.getString("goodbye").equals("Thank you. Goodbye!"));
+        assert(rb.getString( "button.add").equals("Add Item"));
     }
 
     @Test
@@ -32,6 +33,7 @@ class ShoppingCartTest {
         assert(rb.getString("cart.total").equals("Totalkostnad för kundkorgen: {0}"));
         assert(rb.getString("invalid.number").equals("Ogiltigt nummer, försök igen."));
         assert(rb.getString("goodbye").equals("Tack. Hej då!"));
+        assert(rb.getString("button.add").equals("Lägg till vara"));
     }
 
     @Test
@@ -44,6 +46,7 @@ class ShoppingCartTest {
         assert(rb.getString("cart.total").equals("Ostoskori yhteensä: {0}"));
         assert(rb.getString("invalid.number").equals("Virheellinen numero, yritä uudelleen."));
         assert(rb.getString("goodbye").equals("Kiitos. Näkemiin!"));
+        assert(rb.getString("button.add").equals("Lisää tuote"));
     }
 
     @Test
@@ -56,6 +59,7 @@ class ShoppingCartTest {
         assert(rb.getString("cart.total").equals("ショッピングカートの合計: {0}"));
         assert(rb.getString("invalid.number").equals("無効な数字です。もう一度入力してください。"));
         assert(rb.getString("goodbye").equals("ありがとうございます。さようなら!"));
+        assert(rb.getString("button.add").equals("商品を追加"));
     }
 
 }
